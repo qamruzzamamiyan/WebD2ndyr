@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+
+        <h1>ABES 2nd Year Registration</h1>
+
+        <form action="#" method="post">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter Contact Number" required>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Course</label>
+            <div class="course">
+                <input type="checkbox" id="btech" name="course" value="B.Tech">
+                <label for="btech">B.Tech</label><br>
+
+                <input type="checkbox" id="bca" name="course" value="BCA">
+                <label for="bca">BCA</label><br>
+
+                <input type="checkbox" id="msc" name="course" value="M.Sc">
+                <label for="msc">M.Sc</label>
+            </div>
+
+            <input type="submit" value="SUBMIT">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
