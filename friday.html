@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Your JavaScript code here
+    function addNumbers(...numbers) {
+        let sum = 0;
+        for (let num of numbers) {
+            sum += num;
+        }
+        return sum;
+    }
+    function sum(name,...args) {
+        console.log(args);
+        let total = 0;
+        for (let arg of args) {
+            total += arg;
+        }
+        console.log("Hello " + name + ", the total is: " + total);
+        return { name, total };
+    }
+    sum("Ra", 1, 2, 3, 4, 5);
+    function sum(...values){
+        for(let i in values){
+            total=total+Number(values[i]);
+        }
+        console.log("Total is: "+total);
+    }
+</script>
+</html>
